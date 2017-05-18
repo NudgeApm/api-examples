@@ -68,13 +68,21 @@ HTTP status : 200
 NUDGE_TOKEN=xxx.yyy.zzz ./list_apps.sh
 ```
 
-#### create application
+#### create application(s) [create_app.sh](./create_app.sh)
 
 First, you need to know on which account you should create application.
 Account ID (here with 1s) is provided as script argument, name is optional.
 
 ```bash
 NUDGE_TOKEN=xxx.yyy.zzz ./create_app.sh 11111111-1111-1111111111111111111111 'my awesome new app'
+```
+
+If you need to create multiple applications, you just have to write a simple loop.
+```bash
+for i in 1 2 3 4
+do
+	NUDGE_TOKEN=xxx.yyy.zzz ./create_app.sh 11111111-1111-1111111111111111111111 "my awesome new app ${i}"
+done
 ```
 
 ### Explore API
