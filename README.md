@@ -49,7 +49,7 @@ HTTP status : 200
 	"id": "00000000-0000-0000000000000000000000",
 	"lastname": "",
 	"locale": "en",
-	"login": "Sylvain",
+	"login": "YourLogin",
 	"phone": "",
 	"position": "",
 	"status": "USED",
