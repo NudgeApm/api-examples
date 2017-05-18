@@ -15,25 +15,25 @@ If you answered *yes* to any of above questions, then you are on the right place
 
 ## 5 minute tutorial
 
-1. Create API token
+### Create API token
 
 	- Log in on [Nudge APM](https://www.nudge-apm.com/)
 	- Go to user profile.
 	- In *Authentication Tokens* section, create new token.
 	- Copy token value we will refer to it as `xxx.yyy.zzz`
 
-2. Test connection
+### Test connection
 
-	- Clone this repository, or [download ZIP](https://github.com/NudgeApm/api-examples/archive/master.zip) if you don't have [Git](https://git-scm.com/).
-	```bash
-		git clone https://github.com/NudgeApm/api-examples.git
-		cd api-examples
-	```
+#### Clone this repository, or [download ZIP](https://github.com/NudgeApm/api-examples/archive/master.zip) if you don't have [Git](https://git-scm.com/).
+```bash
+	git clone https://github.com/NudgeApm/api-examples.git
+	cd api-examples
+```
 
-	- execute `test_connect.sh` with token
-	```bash
-		NUDGE_TOKEN=xxx.yyy.zzz ./test_connect.sh
-	```
+#### execute `test_connect.sh` with token
+```bash
+	NUDGE_TOKEN=xxx.yyy.zzz ./test_connect.sh
+```
 
 You should get a repy similar to this (formatting may differ if python is not available)
 ```
@@ -60,12 +60,17 @@ HTTP status : 200
 
 ```
 
-3. Explore API
+### Explore API
 
-	- Log in on [Nudge APM](https://www.nudge-apm.com/)
-	- go to *API* section to see which entry points are available
+- Log in on [Nudge APM](https://www.nudge-apm.com/)
+- go to *API* section to see which entry points are available
 
-4. Do awesome stuff
+### Do awesome stuff !
+
+You are now a certified Nudge API master, but don't forget :
+
+> To err is human, to really foul things up requires a computer,
+> an API and an unattended shell script.
 
 ## Other languages
 
