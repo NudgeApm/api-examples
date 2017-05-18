@@ -26,13 +26,13 @@ If you answered *yes* to any of above questions, then you are on the right place
 
 #### Clone this repository, or [download ZIP](https://github.com/NudgeApm/api-examples/archive/master.zip) if you don't have [Git](https://git-scm.com/).
 ```bash
-	git clone https://github.com/NudgeApm/api-examples.git
-	cd api-examples
+git clone https://github.com/NudgeApm/api-examples.git
+cd api-examples
 ```
 
 #### execute `test_connect.sh` with token
 ```bash
-	NUDGE_TOKEN=xxx.yyy.zzz ./test_connect.sh
+NUDGE_TOKEN=xxx.yyy.zzz ./test_connect.sh
 ```
 
 You should get a repy similar to this (formatting may differ if python is not available)
@@ -70,7 +70,7 @@ HTTP status : 200
 You are now a certified Nudge API master, but don't forget :
 
 > To err is human, to really foul things up requires a computer,
-> an API and an unattended shell script.
+> an API with your credentials and an unattended shell script.
 
 ## Other languages
 
