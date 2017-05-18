@@ -17,10 +17,10 @@ If you answered *yes* to any of above questions, then you are on the right place
 
 ### Create API token
 
-	- Log in on [Nudge APM](https://www.nudge-apm.com/)
-	- Go to user profile.
-	- In *Authentication Tokens* section, create new token.
-	- Copy token value we will refer to it as `xxx.yyy.zzz`
+- Log in on [Nudge APM](https://www.nudge-apm.com/)
+- Go to user profile.
+- In *Authentication Tokens* section, create new token.
+- Copy token value we will refer to it as `xxx.yyy.zzz`
 
 ### Test connection
 
