@@ -22,7 +22,7 @@ If you answered *yes* to any of above questions, then you are on the right place
 - In *Authentication Tokens* section, create new token.
 - Copy token value we will refer to it as `xxx.yyy.zzz`
 
-### Test connection
+### Setup & Test
 
 #### Clone this repository, or [download ZIP](https://github.com/NudgeApm/api-examples/archive/master.zip) if you don't have [Git](https://git-scm.com/).
 ```bash
@@ -62,7 +62,11 @@ HTTP status : 200
 
 ### Available examples
 
-#### get list of applications
+#### get list of applications [list_apps.sh](./list_apps.sh)
+
+```bash
+NUDGE_TOKEN=xxx.yyy.zzz ./list_apps.sh
+```
 
 #### create application
 
