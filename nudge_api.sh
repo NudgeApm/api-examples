@@ -30,7 +30,7 @@ doRequest(){
 
 	response=$(mktemp)
 	full_url="${NUDGE_URL}/${path}"
-	curl -v \
+	curl -s \
 		-H "Authorization: Bearer ${NUDGE_TOKEN}" \
 		-H "Content-Type: application/json" \
 		-X "${method}" \
