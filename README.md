@@ -62,15 +62,23 @@ HTTP status : 200
 
 ### Available examples
 
-#### get list of applications [list_apps.sh](./list_apps.sh)
+#### Get list of applications [list_apps.sh](./list_apps.sh)
 
 ```bash
 NUDGE_TOKEN=xxx.yyy.zzz ./list_apps.sh
 ```
 
-#### create application(s) [create_app.sh](./create_app.sh)
+#### Get list of accounts [list_accounts.sh](./list_accounts.sh)
+
+```bash
+NUDGE_TOKEN=xxx.yyy.zzz ./list_accounts.sh
+```
+
+#### Create application(s) [create_app.sh](./create_app.sh)
 
 First, you need to know on which account you should create application.
+In order to get account ID, use [Get list of accounts](#get-list-of-accounts)
+
 Account ID (here with 1s) is provided as script argument, name is optional.
 
 ```bash
