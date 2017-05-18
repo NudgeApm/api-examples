@@ -23,19 +23,31 @@ doRequest(){
 	method=${1?missing http method}
 	path=${2?missing path}
 	payload=${3:-}
+	payload_option=""
+	if [ -f "${payload}" ]; then
+		payload_option="--data @${payload}"
+	fi
 
 	response=$(mktemp)
 	full_url="${NUDGE_URL}/${path}"
-	curl -s \
+	curl -v \
 		-H "Authorization: Bearer ${NUDGE_TOKEN}" \
+		-H "Content-Type: application/json" \
 		-X "${method}" \
 		-w "\n%{http_code}" \
+		${payload_option} \
 		"${full_url}" \
 		> ${response}
 	status=$(cat ${response} | tail -1)
 	json=$(cat ${response} | sed '$d')
+	rm -f ${response}
 
 	echo "request : ${method} ${full_url}"
-	echo "HTTP status : ${status}"
+	if [ -f "${payload}" ]; then
+		cat "${payload}"
+		rm -f "${payload}"
+	fi
+	echo "----"
+	echo "response: ${status}"
 	echo "${json}" | ${FORMAT_CMD}
 }

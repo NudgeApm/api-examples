@@ -60,6 +60,19 @@ HTTP status : 200
 
 ```
 
+### Available examples
+
+#### get list of applications
+
+#### create application
+
+First, you need to know on which account you should create application.
+Account ID (here with 1s) is provided as script argument, name is optional.
+
+```bash
+NUDGE_TOKEN=xxx.yyy.zzz ./create_app.sh 11111111-1111-1111111111111111111111 'my awesome new app'
+```
+
 ### Explore API
 
 - Log in on [Nudge APM](https://www.nudge-apm.com/)
