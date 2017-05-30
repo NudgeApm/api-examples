@@ -95,7 +95,7 @@ done
 
 #### Get application Access Control List (ACL) [get_acl_app.sh](./get_acl_app.sh)
 
-Application ID (here with 2s) should be provided as script argument
+Application ID (here with 2s) should be provided as script argument, you must be admin on this application.
 
 ```bash
 NUDGE_TOKEN=xxx.yyy.zzz ./get_acl_app.sh 22222222-2222-2222222222222222222222
@@ -103,10 +103,11 @@ NUDGE_TOKEN=xxx.yyy.zzz ./get_acl_app.sh 22222222-2222-2222222222222222222222
 
 #### Update application Access Control List (ACL) [update_acl_app.sh](./update_acl_app.sh)
 
-Application ID (here with 2s) should be provided as 1st script argument
+Application ID (here with 2s) should be provided as 1st script argument, you must be admin on this application.
 An admin and guest emails are required as 2cnd & 3rd arguments.
 
 This example only supports a single guest and a single admin.
+Since you can't escape from your own admin duty, you need to use your current account email as 1st argument.
 
 ```bash
 NUDGE_TOKEN=xxx.yyy.zzz ./get_acl_app.sh 22222222-2222-2222222222222222222222 'my_admin_email@my_company.com' 'guest@my_company.com'
