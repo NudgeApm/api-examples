@@ -113,6 +113,20 @@ Since you can't escape from your own admin duty, you need to use your current ac
 NUDGE_TOKEN=xxx.yyy.zzz ./get_acl_app.sh 22222222-2222-2222222222222222222222 'my_admin_email@my_company.com' 'guest@my_company.com'
 ```
 
+#### Export Transactions to CSV [transactions_csv.sh](./transactions_csv.sh)
+
+Application ID (here with 2s) should be provided as 1st script argument.
+
+```bash
+# get transactions from last 24h (default)
+NUDGE_TOKEN=xxx.yyy.zzz ./get_acl_app.sh 22222222-2222-2222222222222222222222
+```
+
+```bash
+# get transactions from last hour
+NUDGE_TOKEN=xxx.yyy.zzz ./get_acl_app.sh 22222222-2222-2222222222222222222222 -1h
+```
+
 ### Explore API
 
 - Log in on [Nudge APM](https://www.nudge-apm.com/)
